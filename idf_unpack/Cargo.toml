@@ -1,5 +1,5 @@
 [package]
-name = "bizarre3_unpack"
+name = "idf_unpack"
 version = "0.1.0"
 authors = ["Pi <ware@pi.wtf>"]
 
