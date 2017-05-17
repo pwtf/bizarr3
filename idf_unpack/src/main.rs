@@ -1,12 +1,20 @@
+use std::env;
 use std::error::Error;
 use std::fs::File;
 use std::io::prelude::*;
 use std::path::Path;
-
+use std::string::String;
 
 fn main() {
-    let path = Path::new("Text.idf");
-    let mut magic = [0; 8];
+    for arg in env::args().skip(1) {
+        println!("{}", arg);
+        process_file(arg);
+    }
+}
+
+fn process_file(filename: String) {
+    let path = Path::new(&filename);
+    let mut magic = [0u8; 8];
     let mut file = match File::open(&path) {
         Err(e) => panic!("Cannot open {}: {}", path.display(), e.description()),
         Ok(file) => file,
