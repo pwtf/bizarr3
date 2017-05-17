@@ -4,3 +4,4 @@ version = "0.1.0"
 authors = ["Pi <ware@pi.wtf>"]
 
 [dependencies]
+byteorder = "1.0.0"
