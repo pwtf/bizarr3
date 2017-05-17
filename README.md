@@ -10,6 +10,6 @@ The ultimate goal is to sharpen my decaying skills (reverse-engineering, for exa
 
 # File Formats
 ## IDF
-All the game assets are stored in the `.idf` files.
+All the game assets are stored in the [.idf](idf_format.md) files.
 ## XFF
 Most of the text resources (`.cfg`, `.dat`, `.scn`, `.vht`) are encoded with this format.
